@@ -26,8 +26,15 @@ Nd: Dimension of the dictionary.
 sigma: Standard deviation.
 Ruu: Autocorrelation matrix.
 ```
-file 3.
+### file 3. CalculateTD
 
+This function computes the TD matrix.
+```sh
+TD = CalculateTD(KDvec, Cv, Nd)
+KDvec: Vectorized KD matrix.
+Cv: Covariance matrix.
+Nd: Dimension of the dictionary.
+```
 ...
 
 
