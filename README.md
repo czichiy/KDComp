@@ -16,8 +16,16 @@ Nd: Dimension of the dictionary.
 sigma: Standard deviation.
 Ruu: Autocorrelation matrix.
 ```
-file 2.
+### file 2. CalculateRkkD
 
+This function computes the RkkD matrix.  
+```sh
+RkkD = CalculateRkkD(Dic, Nd, sigma, Ruu)
+Dic: Dictionary matrix.
+Nd: Dimension of the dictionary.
+sigma: Standard deviation.
+Ruu: Autocorrelation matrix.
+```
 file 3.
 
 ...
