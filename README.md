@@ -5,8 +5,17 @@ KDComp is a MATLAB project designed for computing kernel dictionaries and relate
 
 ## Files Overview
 
-file 1.
+### file 1. CalculateKD
 
+This function computes the KD matrix.  
+```sh
+KD = CalculateKD(Dic, Nd, sigma, Ruu)
+
+Dic: Dictionary matrix.
+Nd: Dimension of the dictionary.
+sigma: Standard deviation.
+Ruu: Autocorrelation matrix.
+```
 file 2.
 
 file 3.
