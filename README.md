@@ -35,6 +35,21 @@ KDvec: Vectorized KD matrix.
 Cv: Covariance matrix.
 Nd: Dimension of the dictionary.
 ```
+Explanation:
+
+	1.	Function Definition:
+	•	function TD = CalculateTD(KDvec, CvD, Nd): Defines the function CalculateTD that takes KDvec, CvD, and Nd as inputs and computes the transformation matrix TD.
+	2.	Vectorized Inner Product Method:
+	•	TD = reshape(KDvec' * reshape(CvD', [], 1), Nd, Nd);
+	•	reshape(CvD', [], 1): Converts the matrix CvD into a column vector.
+	•	KDvec' * reshape(CvD', [], 1): Computes a vectorized inner product.
+	•	reshape(..., Nd, Nd): Reshapes the resulting vector into an  Nd \times Nd  matrix TD, representing the transformation matrix.
+	3.	Benefits of Vectorization:
+	•	Efficiency: Avoids the inefficiencies of nested loops, using MATLAB’s optimized matrix operations.
+	•	Scalability: Particularly advantageous for larger values of Nd, where traditional methods would be slower.
+	4.	Uncommented Traditional Approach (for Reference):
+	•	Provided as commented-out code, it demonstrates a nested loop method for computing TD. This approach is typically slower and less efficient compared to the vectorized method shown.
+
 ...
 
 
