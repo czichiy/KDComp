@@ -52,6 +52,10 @@ Explanation:
 
 ...
 
+### File 4. Fix_dic_test  
+
+The MATLAB file Fix_dic_test.m implements a Kernel Least Mean Square (KLMS) algorithm using a Gaussian kernel with a fixed uniform dictionary. The code involves several key components: parameter initialization, input signal generation, filter operation, theoretical model computation, and result plotting.
+
 
 ## Installation
 
